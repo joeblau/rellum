@@ -7,19 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E6856D8C1EBEAAAA0002B078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6856D8B1EBEAAAA0002B078 /* AppDelegate.swift */; };
-		E6856D8E1EBEAAAA0002B078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6856D8D1EBEAAAA0002B078 /* ViewController.swift */; };
-		E6856D901EBEAAAA0002B078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6856D8F1EBEAAAA0002B078 /* Assets.xcassets */; };
-		E6856D931EBEAAAA0002B078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6856D911EBEAAAA0002B078 /* Main.storyboard */; };
+		E6BE841B1EBEB08900AAF64C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BE84181EBEB08800AAF64C /* RxCocoa.framework */; };
+		E6BE841C1EBEB08900AAF64C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6BE84181EBEB08800AAF64C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6BE841D1EBEB08900AAF64C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BE84191EBEB08800AAF64C /* RxSwift.framework */; };
+		E6BE841E1EBEB08900AAF64C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6BE84191EBEB08800AAF64C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6BE841F1EBEB08900AAF64C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BE841A1EBEB08900AAF64C /* SnapKit.framework */; };
+		E6BE84201EBEB08900AAF64C /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6BE841A1EBEB08900AAF64C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6BE84841EBEBD4100AAF64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BE84791EBEBD4100AAF64C /* Assets.xcassets */; };
+		E6BE84851EBEBD4100AAF64C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6BE847A1EBEBD4100AAF64C /* Localizable.strings */; };
+		E6BE84871EBEBD4100AAF64C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84811EBEBD4100AAF64C /* main.swift */; };
+		E6BE84881EBEBD4100AAF64C /* NSColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84821EBEBD4100AAF64C /* NSColor+Extensions.swift */; };
+		E6BE84891EBEBD4100AAF64C /* RellumTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84831EBEBD4100AAF64C /* RellumTextField.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6BE84211EBEB08900AAF64C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E6BE84201EBEB08900AAF64C /* SnapKit.framework in Embed Frameworks */,
+				E6BE841E1EBEB08900AAF64C /* RxSwift.framework in Embed Frameworks */,
+				E6BE841C1EBEB08900AAF64C /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E6856D881EBEAAAA0002B078 /* Rellum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rellum.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6856D8B1EBEAAAA0002B078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6856D8D1EBEAAAA0002B078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E6856D8F1EBEAAAA0002B078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E6856D921EBEAAAA0002B078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E6856D941EBEAAAA0002B078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6BE84181EBEB08800AAF64C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		E6BE84191EBEB08800AAF64C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		E6BE841A1EBEB08900AAF64C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/Mac/SnapKit.framework; sourceTree = "<group>"; };
+		E6BE84791EBEBD4100AAF64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6BE847B1EBEBD4100AAF64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6BE847C1EBEBD4100AAF64C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6BE847D1EBEBD4100AAF64C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6BE847F1EBEBD4100AAF64C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6BE84811EBEBD4100AAF64C /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E6BE84821EBEBD4100AAF64C /* NSColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Extensions.swift"; sourceTree = "<group>"; };
+		E6BE84831EBEBD4100AAF64C /* RellumTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RellumTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BE841F1EBEB08900AAF64C /* SnapKit.framework in Frameworks */,
+				E6BE841D1EBEB08900AAF64C /* RxSwift.framework in Frameworks */,
+				E6BE841B1EBEB08900AAF64C /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +68,9 @@
 		E6856D7F1EBEAAAA0002B078 = {
 			isa = PBXGroup;
 			children = (
+				E6BE84181EBEB08800AAF64C /* RxCocoa.framework */,
+				E6BE84191EBEB08800AAF64C /* RxSwift.framework */,
+				E6BE841A1EBEB08900AAF64C /* SnapKit.framework */,
 				E6856D8A1EBEAAAA0002B078 /* Rellum */,
 				E6856D891EBEAAAA0002B078 /* Products */,
 			);
@@ -52,13 +87,38 @@
 		E6856D8A1EBEAAAA0002B078 /* Rellum */ = {
 			isa = PBXGroup;
 			children = (
-				E6856D8B1EBEAAAA0002B078 /* AppDelegate.swift */,
-				E6856D8D1EBEAAAA0002B078 /* ViewController.swift */,
-				E6856D8F1EBEAAAA0002B078 /* Assets.xcassets */,
-				E6856D911EBEAAAA0002B078 /* Main.storyboard */,
-				E6856D941EBEAAAA0002B078 /* Info.plist */,
+				E6BE84781EBEBD4100AAF64C /* Resources */,
+				E6BE847E1EBEBD4100AAF64C /* SupportingFiles */,
+				E6BE84801EBEBD4100AAF64C /* Types */,
 			);
 			path = Rellum;
+			sourceTree = "<group>";
+		};
+		E6BE84781EBEBD4100AAF64C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE84791EBEBD4100AAF64C /* Assets.xcassets */,
+				E6BE847A1EBEBD4100AAF64C /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6BE847E1EBEBD4100AAF64C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE847F1EBEBD4100AAF64C /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E6BE84801EBEBD4100AAF64C /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE84811EBEBD4100AAF64C /* main.swift */,
+				E6BE84821EBEBD4100AAF64C /* NSColor+Extensions.swift */,
+				E6BE84831EBEBD4100AAF64C /* RellumTextField.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +131,7 @@
 				E6856D841EBEAAAA0002B078 /* Sources */,
 				E6856D851EBEAAAA0002B078 /* Frameworks */,
 				E6856D861EBEAAAA0002B078 /* Resources */,
+				E6BE84211EBEB08900AAF64C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -93,6 +154,7 @@
 				TargetAttributes = {
 					E6856D871EBEAAAA0002B078 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -104,6 +166,22 @@
 			knownRegions = (
 				en,
 				Base,
+				da,
+				de,
+				"es-MX",
+				es,
+				fi,
+				fr,
+				he,
+				it,
+				ja,
+				ko,
+				nl,
+				"pt-BR",
+				"pt-PT",
+				ru,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = E6856D7F1EBEAAAA0002B078;
 			productRefGroup = E6856D891EBEAAAA0002B078 /* Products */;
@@ -120,8 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6856D901EBEAAAA0002B078 /* Assets.xcassets in Resources */,
-				E6856D931EBEAAAA0002B078 /* Main.storyboard in Resources */,
+				E6BE84841EBEBD4100AAF64C /* Assets.xcassets in Resources */,
+				E6BE84851EBEBD4100AAF64C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,20 +210,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6856D8E1EBEAAAA0002B078 /* ViewController.swift in Sources */,
-				E6856D8C1EBEAAAA0002B078 /* AppDelegate.swift in Sources */,
+				E6BE84881EBEBD4100AAF64C /* NSColor+Extensions.swift in Sources */,
+				E6BE84871EBEBD4100AAF64C /* main.swift in Sources */,
+				E6BE84891EBEBD4100AAF64C /* RellumTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E6856D911EBEAAAA0002B078 /* Main.storyboard */ = {
+		E6BE847A1EBEBD4100AAF64C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E6856D921EBEAAAA0002B078 /* Base */,
+				E6BE847B1EBEBD4100AAF64C /* Base */,
+				E6BE847C1EBEBD4100AAF64C /* en */,
+				E6BE847D1EBEBD4100AAF64C /* es */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -192,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -236,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -247,11 +328,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Rellum/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Rellum/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.designutilities.Rellum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -260,8 +347,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Rellum/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = Rellum/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.designutilities.Rellum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +380,7 @@
 				E6856D991EBEAAAA0002B078 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

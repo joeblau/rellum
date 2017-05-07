@@ -1,3 +1,3 @@
 defaults:
   configuration: Debug
-  platform: macos
+  platform: Mac

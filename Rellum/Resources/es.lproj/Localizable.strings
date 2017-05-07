@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Rellum
+
+  Created by Joseph Blau on 5/6/17.
+  Copyright © 2017 Design Utilities. All rights reserved.
+*/
+
+"black" = "Negro";
+"white" = "Blanco";
+"quit" = "Salir";
