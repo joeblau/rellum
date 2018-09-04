@@ -17,8 +17,8 @@ class RellumTextField: NSTextField {
     var rellumDelegate: RellumTextFieldDelegate?
     
     required init() {
-        super.init(frame: NSZeroRect)
-        
+        super.init(frame: NSRect.zero)
+
         alignment = .center
         font = .menuFont(ofSize: 16)
         stringValue = "-"
@@ -27,15 +27,16 @@ class RellumTextField: NSTextField {
         isBordered = false
         isSelectable = false
         isEditable = false
+        translatesAutoresizingMaskIntoConstraints = false
         
         wantsLayer = true
         layer?.cornerRadius = 2.0
     }
-    
+
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
     }
