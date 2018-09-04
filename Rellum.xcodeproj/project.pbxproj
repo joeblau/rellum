@@ -10,6 +10,13 @@
 		E643197A213E1C15002D0719 /* NSAppearance+DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6431979213E1C15002D0719 /* NSAppearance+DarkMode.swift */; };
 		E643197E213E1DE9002D0719 /* String+Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643197D213E1DE9002D0719 /* String+Localize.swift */; };
 		E6431980213E1F4F002D0719 /* RelativeLuminance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643197F213E1F4F002D0719 /* RelativeLuminance.swift */; };
+		E6431988213E27C5002D0719 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6431987213E27C5002D0719 /* main.swift */; };
+		E643198A213E27C6002D0719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6431989213E27C6002D0719 /* Assets.xcassets */; };
+		E6431996213E2ABF002D0719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6431995213E2ABF002D0719 /* AppDelegate.swift */; };
+		E6431998213E2B50002D0719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6431997213E2B50002D0719 /* AppDelegate.swift */; };
+		E643199A213E2C18002D0719 /* LauncherApplication.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = E6431985213E27C5002D0719 /* LauncherApplication.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E643199C213E2C8B002D0719 /* Notification+Killer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643199B213E2C8B002D0719 /* Notification+Killer.swift */; };
+		E643199D213E2CD3002D0719 /* Notification+Killer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643199B213E2C8B002D0719 /* Notification+Killer.swift */; };
 		E6BE84841EBEBD4100AAF64C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BE84791EBEBD4100AAF64C /* Assets.xcassets */; };
 		E6BE84851EBEBD4100AAF64C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6BE847A1EBEBD4100AAF64C /* Localizable.strings */; };
 		E6BE84871EBEBD4100AAF64C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BE84811EBEBD4100AAF64C /* main.swift */; };
@@ -18,6 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E6431999213E2C0C002D0719 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				E643199A213E2C18002D0719 /* LauncherApplication.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6BE84211EBEB08900AAF64C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,6 +51,14 @@
 		E6431979213E1C15002D0719 /* NSAppearance+DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAppearance+DarkMode.swift"; sourceTree = "<group>"; };
 		E643197D213E1DE9002D0719 /* String+Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localize.swift"; sourceTree = "<group>"; };
 		E643197F213E1F4F002D0719 /* RelativeLuminance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeLuminance.swift; sourceTree = "<group>"; };
+		E6431985213E27C5002D0719 /* LauncherApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauncherApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6431987213E27C5002D0719 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E6431989213E27C6002D0719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E643198E213E27C6002D0719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E643198F213E27C6002D0719 /* LauncherApplication.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LauncherApplication.entitlements; sourceTree = "<group>"; };
+		E6431995213E2ABF002D0719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6431997213E2B50002D0719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E643199B213E2C8B002D0719 /* Notification+Killer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Killer.swift"; sourceTree = "<group>"; };
 		E6856D881EBEAAAA0002B078 /* Rellum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rellum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BE84791EBEBD4100AAF64C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6BE847B1EBEBD4100AAF64C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -46,6 +71,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E6431982213E27C5002D0719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6856D851EBEAAAA0002B078 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,10 +98,56 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E6431986213E27C5002D0719 /* LauncherApplication */ = {
+			isa = PBXGroup;
+			children = (
+				E64319A1213E33BB002D0719 /* SupportingFiles */,
+				E64319A0213E33A7002D0719 /* Resources */,
+				E643199F213E339F002D0719 /* Types */,
+			);
+			path = LauncherApplication;
+			sourceTree = "<group>";
+		};
+		E643199E213E2CDB002D0719 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E643199B213E2C8B002D0719 /* Notification+Killer.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E643199F213E339F002D0719 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				E6431987213E27C5002D0719 /* main.swift */,
+				E6431997213E2B50002D0719 /* AppDelegate.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		E64319A0213E33A7002D0719 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6431989213E27C6002D0719 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E64319A1213E33BB002D0719 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E643198E213E27C6002D0719 /* Info.plist */,
+				E643198F213E27C6002D0719 /* LauncherApplication.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		E6856D7F1EBEAAAA0002B078 = {
 			isa = PBXGroup;
 			children = (
+				E643199E213E2CDB002D0719 /* Shared */,
 				E6856D8A1EBEAAAA0002B078 /* Rellum */,
+				E6431986213E27C5002D0719 /* LauncherApplication */,
 				E6856D891EBEAAAA0002B078 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				E6856D881EBEAAAA0002B078 /* Rellum.app */,
+				E6431985213E27C5002D0719 /* LauncherApplication.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +195,7 @@
 				E6BE84811EBEBD4100AAF64C /* main.swift */,
 				E6BE84831EBEBD4100AAF64C /* RellumTextField.swift */,
 				E643197F213E1F4F002D0719 /* RelativeLuminance.swift */,
+				E6431995213E2ABF002D0719 /* AppDelegate.swift */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -123,6 +203,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E6431984213E27C5002D0719 /* LauncherApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6431992213E27C6002D0719 /* Build configuration list for PBXNativeTarget "LauncherApplication" */;
+			buildPhases = (
+				E6431981213E27C5002D0719 /* Sources */,
+				E6431982213E27C5002D0719 /* Frameworks */,
+				E6431983213E27C5002D0719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LauncherApplication;
+			productName = LauncherApplication;
+			productReference = E6431985213E27C5002D0719 /* LauncherApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E6856D871EBEAAAA0002B078 /* Rellum */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6856D971EBEAAAA0002B078 /* Build configuration list for PBXNativeTarget "Rellum" */;
@@ -132,6 +229,7 @@
 				E6856D861EBEAAAA0002B078 /* Resources */,
 				E6BE84211EBEB08900AAF64C /* Embed Frameworks */,
 				E6431978213E17E7002D0719 /* ShellScript */,
+				E6431999213E2C0C002D0719 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -148,12 +246,18 @@
 		E6856D801EBEAAAA0002B078 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Joe Blau";
 				TargetAttributes = {
+					E6431984213E27C5002D0719 = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = K78G42H4U2;
+						ProvisioningStyle = Automatic;
+					};
 					E6856D871EBEAAAA0002B078 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = K78G42H4U2;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
@@ -189,11 +293,20 @@
 			projectRoot = "";
 			targets = (
 				E6856D871EBEAAAA0002B078 /* Rellum */,
+				E6431984213E27C5002D0719 /* LauncherApplication */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E6431983213E27C5002D0719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E643198A213E27C6002D0719 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6856D861EBEAAAA0002B078 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,14 +339,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E6431981213E27C5002D0719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6431998213E2B50002D0719 /* AppDelegate.swift in Sources */,
+				E643199D213E2CD3002D0719 /* Notification+Killer.swift in Sources */,
+				E6431988213E27C5002D0719 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E6856D841EBEAAAA0002B078 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E6BE84881EBEBD4100AAF64C /* NSColor+Components.swift in Sources */,
+				E643199C213E2C8B002D0719 /* Notification+Killer.swift in Sources */,
 				E6431980213E1F4F002D0719 /* RelativeLuminance.swift in Sources */,
 				E643197E213E1DE9002D0719 /* String+Localize.swift in Sources */,
 				E643197A213E1C15002D0719 /* NSAppearance+DarkMode.swift in Sources */,
+				E6431996213E2ABF002D0719 /* AppDelegate.swift in Sources */,
 				E6BE84871EBEBD4100AAF64C /* main.swift in Sources */,
 				E6BE84891EBEBD4100AAF64C /* RellumTextField.swift in Sources */,
 			);
@@ -255,6 +380,53 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E6431990213E27C6002D0719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = LauncherApplication/SupportingFiles/LauncherApplication.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K78G42H4U2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/LauncherApplication/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.LauncherApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		E6431991213E27C6002D0719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = LauncherApplication/SupportingFiles/LauncherApplication.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K78G42H4U2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/LauncherApplication/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.LauncherApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		E6856D951EBEAAAA0002B078 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,13 +542,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K78G42H4U2;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Rellum/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.designutilities.Rellum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Rellum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
@@ -388,13 +564,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = K78G42H4U2;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Rellum/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.designutilities.Rellum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeblau.Rellum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.2;
 			};
@@ -403,6 +583,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E6431992213E27C6002D0719 /* Build configuration list for PBXNativeTarget "LauncherApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6431990213E27C6002D0719 /* Debug */,
+				E6431991213E27C6002D0719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E6856D831EBEAAAA0002B078 /* Build configuration list for PBXProject "Rellum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

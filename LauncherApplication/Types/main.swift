@@ -1,9 +1,9 @@
 //
 //  main.swift
-//  Rellum
+//  LauncherApplication
 //
-//  Created by Joe Blau on 5/6/17.
-//  Copyright © 2017 Joe Blau. All rights reserved.
+//  Created by Joe Blau on 9/3/18.
+//  Copyright © 2018 Joe Blau. All rights reserved.
 //
 
 import Cocoa
