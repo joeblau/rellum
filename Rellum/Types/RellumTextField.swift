@@ -2,20 +2,20 @@
 //  RellumTextField.swift
 //  Rellum
 //
-//  Created by Joseph Blau on 5/6/17.
-//  Copyright © 2017 Design Utilities. All rights reserved.
+//  Created by Joe Blau on 5/6/17.
+//  Copyright © 2017 Joe Blau. All rights reserved.
 //
 
 import Cocoa
 
-protocol RellumTextFieldDelegate {
+protocol RellumTextFieldDelegate: class {
     func showMenu()
 }
 
 class RellumTextField: NSTextField {
 
-    var rellumDelegate: RellumTextFieldDelegate?
-    
+    weak var rellumDelegate: RellumTextFieldDelegate?
+
     required init() {
         super.init(frame: NSRect.zero)
 
@@ -28,7 +28,7 @@ class RellumTextField: NSTextField {
         isSelectable = false
         isEditable = false
         translatesAutoresizingMaskIntoConstraints = false
-        
+
         wantsLayer = true
         layer?.cornerRadius = 2.0
     }
@@ -40,18 +40,33 @@ class RellumTextField: NSTextField {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
     }
-    
+
     override func mouseDown(with event: NSEvent) {
         rellumDelegate?.showMenu()
     }
-    
-    func setWhite(isWhite: Bool) {
-        let isDark = NSAppearance.current().name.hasPrefix("NSAppearanceNameVibrantDark")
-        let whiteBGColor: NSColor? = isDark ? .clear : NSColor(deviceWhite: 0.3, alpha: 1.0)
-        
-        (backgroundColor, textColor, stringValue) = isWhite ?
-            (whiteBGColor, .white, NSLocalizedString("white", comment: "white")) :
-            (.white, .black, NSLocalizedString("black", comment: "black"))
+
+    func rellum(rellum: RelativeLuminance) {
+        switch rellum {
+        case .white:
+            backgroundColor = rellumBackgroundColor
+            textColor = .white
+            stringValue = "white".localize
+        case .black:
+            backgroundColor = .white
+            textColor = .black
+            stringValue = "black".localize
+        }
     }
-    
+
+    private var rellumBackgroundColor: NSColor {
+        switch NSAppearance.isDark {
+        case true: return .clear
+        case false: return NSColor(deviceWhite: 0.3, alpha: 1.0)
+        }
+    }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+private func convertFromNSAppearanceName(_ input: NSAppearance.Name) -> String {
+	return input.rawValue
 }

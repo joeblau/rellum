@@ -2,15 +2,15 @@
 //  AppDelegate.swift
 //  Rellum
 //
-//  Created by Joseph Blau on 5/6/17.
-//  Copyright © 2017 Design Utilities. All rights reserved.
+//  Created by Joe Blau on 5/6/17.
+//  Copyright © 2017 Joe Blau. All rights reserved.
 //
 
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    fileprivate var statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
+    fileprivate var statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private let rellumTextField = RellumTextField()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -28,8 +28,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     // MARK: - Selectors
-    
-    func quit() {
+
+    @objc func quit() {
         NSApp.terminate(self)
     }
 
@@ -37,14 +37,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func buildMenu() {
         guard let statusItemMenu = statusItem.menu else { return }
-        statusItemMenu.addItem(withTitle: NSLocalizedString("quit", comment: "quit"), action: #selector(quit), keyEquivalent: "")
+        statusItemMenu.addItem(withTitle: NSLocalizedString("quit", comment: "quit"),
+                               action: #selector(quit),
+                               keyEquivalent: "")
     }
 
     private func configureViews() {
         guard let statusItemView = statusItem.view else { return }
         statusItemView.translatesAutoresizingMaskIntoConstraints = false
         statusItemView.widthAnchor.constraint(equalToConstant: 80).isActive = true
-        statusItemView.heightAnchor.constraint(equalToConstant: NSStatusBar.system().thickness).isActive = true
+        statusItemView.heightAnchor.constraint(equalToConstant: NSStatusBar.system.thickness).isActive = true
 
         statusItemView.addSubview(rellumTextField)
         rellumTextField.topAnchor.constraint(equalTo: statusItemView.topAnchor, constant: 2).isActive = true
@@ -64,9 +66,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 let pixelColor = NSBitmapImageRep(cgImage: pixelImage).colorAt(x: 0, y: 0)  else {
                     return
             }
-            let isWhite = 0.5 >= (0.2126 * pixelColor.components.red + 0.7152 * pixelColor.components.green + 0.0722 * pixelColor.components.blue)
-
-            self.rellumTextField.setWhite(isWhite: isWhite)
+            self.rellumTextField.rellum(rellum: RelativeLuminance.of(color: pixelColor))
         }
     }
 }
@@ -74,12 +74,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 extension AppDelegate: RellumTextFieldDelegate {
     func showMenu() {
         guard let statusItemMenu = statusItem.menu else { return }
-        statusItem.popUpMenu(statusItemMenu);
+        statusItem.popUpMenu(statusItemMenu)
     }
 }
 
-autoreleasepool { () -> () in
-    let app = NSApplication.shared()
+autoreleasepool { () -> Void in
+    let app = NSApplication.shared
     let delegate = AppDelegate()
     app.delegate = delegate
     app.run()
